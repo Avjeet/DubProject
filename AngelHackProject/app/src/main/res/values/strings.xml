@@ -9,4 +9,6 @@
         <item>A helper module for generating dummy filler text. Presently it defines a new ipsum provider plugin manager service that allows for pluggable ipsum provider classes, making it easy to change existing implementations and also to add new ones.</item>
         <item>A simple filler text generator generator. Use your custom sentences and create some original Lorem ipsum.</item>
     </string-array>
+
+
 </resources>

@@ -41,9 +41,9 @@ public class WallFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         arrayList = new ArrayList<>();
-        arrayList.add(new WallContent("Landslide in kashmir","ASSIST",2,15,R.mipmap.ic_launcher,R.drawable.assist_ngo_image));
-        arrayList.add(new WallContent("Floods in Kerela","ASSIST",2,15,R.mipmap.ic_launcher,R.mipmap.ic_launcher));
-        arrayList.add(new WallContent("Fund raising for family of soldier martyred in attacks","Atrang Foundation",5,10,R.mipmap.ic_launcher,R.mipmap.ic_launcher));
+        arrayList.add(new WallContent("Landslide in kashmir , \n 20 dead , 45 injured .","ASSIST",2,15,R.drawable.assist_logo,R.drawable.landslide_image));
+        arrayList.add(new WallContent("Floods in Kerela , \n organizing camp for victims","ASSIST",2,15,R.drawable.assist_logo,R.drawable.floods_image));
+        arrayList.add(new WallContent("Martyred Soldiers , Relief funds for family","Atrang Foundation",5,10,R.drawable.antarang_foundation_image,R.drawable.soldiers_images));
         RecyclerView mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);

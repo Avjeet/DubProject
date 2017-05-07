@@ -35,7 +35,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public RecyclerAdapter(ArrayList<WallContent> arraylist,Context context){
         this.arrayList=arraylist;
         this.context=context;
-        arrayAdapter= new ArrayAdapter<>(context, android.R.layout.select_dialog_multichoice);
+        arrayAdapter= new ArrayAdapter<>(context, android.R.layout.select_dialog_item);
         arrayAdapter.add("Donate by E-Cash");
         arrayAdapter.add("Donate by watching Ads");
 
@@ -89,12 +89,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                         }
                         else{
                             Intent videoIntent = new Intent(context,VideoActivity.class);
+                            videoIntent.putExtra("flag",false);
                             context.startActivity(videoIntent);
                         }
                     }
                 });
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
             }
         });
+
+
 
 
         float temp = arrayList.get(position).getRaised()/arrayList.get(position).getTarget();

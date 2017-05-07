@@ -1,5 +1,6 @@
 package com.example.hasneetsingh.angelhackproject;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,8 +28,14 @@ public class VideoActivity extends AppCompatActivity {
 
         if (currentPosition == 0) {
 
+            Intent intent = getIntent();
+            boolean flag = intent.getBooleanExtra("flag",false);
 
-            videoView.setVideoPath("sdcard/DCIM/short_ad.3gp");
+            if(flag==false)
+            videoView.setVideoPath("/sdcard/DCIM/short_ad.3gp");
+            else
+                videoView.setVideoPath("/sdcard/DCIM/long_ad.3gp");
+
             videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mediaPlayer) {

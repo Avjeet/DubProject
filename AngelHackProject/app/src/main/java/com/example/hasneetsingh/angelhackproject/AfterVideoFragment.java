@@ -44,6 +44,15 @@ public class AfterVideoFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        ImageButton play_again= (ImageButton) view.findViewById(R.id.imageButton);
+        play_again.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(),VideoActivity.class);
+                intent.putExtra("flag",true);
+                startActivity(intent);
+            }
+        });
     }
 
 

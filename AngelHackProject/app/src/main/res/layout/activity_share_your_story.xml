@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/story"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: Cancer Patient Funds"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cause :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/spinner"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Story :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="300dp"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/editText"
+                    android:hint=" Write your story here..."
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:background="#E0E0E0"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/upload"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: Harinder"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: 8130260676"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: G/62 Rajouri Garden, New Delhi -18"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" harinder12@gmail.com"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Acc No :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: 5200600424889655"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="IFSC Code :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: PUN6022554"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Pan Card :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: ILP2500698"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="110sp"
+                    android:layout_height="wrap_content"
+                    android:text="Adhaar Card :"
+                    android:textSize="17sp"
+                    android:textColor="#212121"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="20dp"
+                    android:hint=" eg: 8500-2563-7844"
+                    android:background="@drawable/shape"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:src="@drawable/documents"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Attach Needed Documents"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="10dp">
+
+            </View>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Request Verification"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:background="?attr/selectableItemBackground"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

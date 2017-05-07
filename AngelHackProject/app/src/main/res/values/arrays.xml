@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_cause_options">
+        <item>Medical</item>
+        <item>Education</item>
+        <item>Natural Calamities</item>
+        <item>Charity</item>
+        <item>Orphanage</item>
+        <item>Social Welfare</item>
+    </string-array>
+</resources>

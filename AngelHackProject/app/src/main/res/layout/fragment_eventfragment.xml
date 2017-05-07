@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.84"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/events"
+                        android:background="@android:color/holo_orange_light"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="75dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="EVENTS"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:textSize="45sp"
+                        android:textColor="@android:color/holo_orange_light"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Blood Donation Camp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#BDBDBD">
+                        </View>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NGO :"
+                                android:paddingLeft="5dp"
+                                android:textSize="17sp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Being Human"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 20th May, 2017"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 2 hours"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location :"
+                                android:textSize="17sp"
+                                android:paddingLeft="5dp"
+                                android:textColor="#37474F"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Sector 127, Noida"
+                                android:textColor="#33691E"
+                                android:textSize="15sp"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Volunteer"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:background="?attr/selectableItemBackground"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

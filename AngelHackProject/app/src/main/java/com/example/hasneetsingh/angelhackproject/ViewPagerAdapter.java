@@ -19,9 +19,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch(position){
             case 0:return "Wall";
-            case 1:return "Profile";
-            case 2:return "Wall";
+            case 1:return "Events";
+            case 2:return "Stories";
             case 3:return "Profile";
+            case 4:return "Report";
 
 
             default:return null;
@@ -35,13 +36,14 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return new WallFragment();
 
             case 1:
-                return new ProfileFragment();
+                return new Eventfragment();
             case 2:
-                return new WallFragment();
+                return new SuccessStoriesFragment();
 
             case 3:
                 return new ProfileFragment();
-
+            case 4:
+                return new AnalysisFragment();
 
             default:
                 return null;
@@ -52,6 +54,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 }
